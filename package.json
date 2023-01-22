@@ -1,7 +1,7 @@
 {
-  "name": "figma-plugin-react-template",
+  "name": "create-your-first-figma-plugin",
   "version": "1.0.0",
-  "description": "This plugin template uses Typescript. If you are familiar with Javascript, Typescript will look very familiar. In fact, valid Javascript code is already valid Typescript code.",
+  "description": "This plugin uses Typescript + React. Create your first plugin that creates and updates component instances",
   "license": "ISC",
   "scripts": {
     "build": "webpack --mode=production",
