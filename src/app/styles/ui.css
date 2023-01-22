@@ -1,37 +1,90 @@
 body {
   font: 12px sans-serif;
   text-align: center;
-  margin: 20px;
+  overflow-x: hidden;
+  display: grid;
+  align-items: flex-start;
+  justify-content: center;
+}
+#react-page {
+  width: 100%;
 }
 button {
   border-radius: 5px;
   background: white;
   color: black;
   border: none;
-  padding: 8px 15px;
+  padding: 8px 16px;
   margin: 0 5px;
   box-shadow: inset 0 0 0 1px black;
   outline: none;
+  display: grid;
+  place-content: center;
+}
+button.tab {
+  background: none;
+  border-radius: none;
+  box-shadow: none;
+  color: black;
+  padding: 4px 8px;
+  margin: 0px;
+  font-weight: 600;
+}
+button.tab:hover {
+  box-shadow: inset 0 0 0 1px black;
+}
+.tab.selected {
+  background-color: #deeffb;
+  box-shadow: inset 0 0 0 1px #1fa4fc;
+}
+.tabs-header {
+  width: 100%;
+  display: flex;
+}
+.tab-container {
+  width: 100%;
+}
+.tabs-panel {
+  padding: 8px 0px 4px 4px;
+}
+label {
+  color: #676767;
+  font-size: 12px;
 }
 #create {
   box-shadow: none;
   background: #18a0fb;
   color: white;
 }
-input {
+.form-control-container {
+  display: grid;
+  margin: 4px;
+}
+.form-control-container > label {
+  justify-self: start;
+  padding: 4px 0px;
+}
+input,
+textarea,
+select {
   border: none;
   outline: none;
   padding: 8px;
-}
-input:hover {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+input:hover,
+textarea:hover,
+select:hover {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
 button:focus {
   box-shadow: inset 0 0 0 2px #18a0fb;
 }
 #create:focus {
-  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.6);
 }
-input:focus {
+input:focus,
+textarea:focus,
+select:focus {
   box-shadow: inset 0 0 0 2px #18a0fb;
 }
